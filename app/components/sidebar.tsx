@@ -5,6 +5,7 @@ import styles from "./home.module.scss";
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
+import HomeIcon from "../icons/home.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
@@ -223,6 +224,11 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<GithubIcon />} shadow />
             </a>
           </div> */}
+          <div className={styles["sidebar-action"]}>
+            <a href={'https://wyxogo.top/'} target="_blank" rel="noopener noreferrer">
+              <IconButton icon={<HomeIcon />} shadow />
+            </a>
+          </div>
         </div>
         <div>
           <IconButton
