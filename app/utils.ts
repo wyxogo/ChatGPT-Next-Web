@@ -293,6 +293,9 @@ export function showPlugins(provider: ServiceProvider, model: string) {
   if (provider == ServiceProvider.Google && !model.includes("vision")) {
     return true;
   }
+  if (model.includes("/")) {
+    return true;
+  }
   return false;
 }
 
