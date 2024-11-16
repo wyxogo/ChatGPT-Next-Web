@@ -306,7 +306,7 @@ export function SideBar(props: { className?: string }) {
                 />
               </Link>
             </div>
-            <div className={styles["sidebar-action"]}>
+            {/* <div className={styles["sidebar-action"]}>
               <a href={'https://github.com/wyxogo/Chat-UI'} target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
@@ -314,6 +314,23 @@ export function SideBar(props: { className?: string }) {
                   shadow
                 />
               </a>
+            </div> */}
+            <div className={styles["sidebar-action"]}>
+            <IconButton
+              icon={
+                <>
+                  {theme === Theme.Auto ? (
+                    <AutoIcon />
+                  ) : theme === Theme.Light ? (
+                    <LightIcon />
+                  ) : theme === Theme.Dark ? (
+                    <DarkIcon />
+                  ) : null}
+                </>
+              }
+              onClick={nextTheme}
+              shadow
+            />
             </div>
           </>
         }
