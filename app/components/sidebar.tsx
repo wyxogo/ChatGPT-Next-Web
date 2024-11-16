@@ -245,7 +245,7 @@ export function SideBar(props: { className?: string }) {
     >
       <SideBarHeader
         title="AIFx"
-        subTitle="y = f(x)"
+        subTitle="AI Function Tech."
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
       >
